@@ -1,0 +1,16 @@
+.wrapper {
+  background: black;
+  padding: 1rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.inverted {
+  color: yellow;
+  background: green;
+  border: 1px solid red;
+}
+:global .something {
+  font-weight: 800;
+  color: aqua;
+}
