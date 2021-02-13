@@ -5,12 +5,15 @@
   font-size: 2rem;
 }
 
-.inverted {
+&.inverted {
   color: yellow;
   background: green;
   border: 1px solid red;
 }
-:global .something {
-  font-weight: 800;
-  color: aqua;
+
+:global {
+  .something {
+    font-weight: 800;
+    color: aqua;
+  }
 }
