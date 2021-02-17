@@ -37,7 +37,7 @@ const App = () =>{
       setTodos(todos.concat(todo));
       nextId.current += 1;
     },
-    {todos},
+    [todos],
   );
 
   const onRemove = useCallback(
@@ -47,10 +47,21 @@ const App = () =>{
     [todos],
   );
   
+  const onToggle = useCallback(
+    id => {
+      setTodos(
+        todos.map(todo=>
+          todo.id === id ? {...todo, checked : !todo.checked}:todo,
+          ),
+      );
+    },
+    [todos],
+  )
+
   return (
     <TodoTemplate>
       <TodoInsert onInsert={onInsert}/>
-      <TodoList todos={todos} onRemove={onRemove}/>
+      <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
     </TodoTemplate>
   );
 };
