@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dongtony12/react-study/issues"
   },
-  "homepage": "https://github.com/dongtony12/react-study#readme"
+  "homepage": "https://github.com/dongtony12/react-study#readme",
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  }
 }

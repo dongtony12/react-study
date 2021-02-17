@@ -28,7 +28,7 @@ props.inverted &&
 css `
 background: none;
 border : 2px solid white;
-color: white;
+color: green;
 &:hover {
     background: white;
     color : black;
@@ -36,7 +36,7 @@ color: white;
 }
 `};
 & + button {
-    margin-left : 1rem;
+    -lemarginft : 1rem;
 }
 `;
 

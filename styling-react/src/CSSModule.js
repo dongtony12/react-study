@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 const CSSModule = () => {
     return (
         <div className={cx('wrapper','inverted')}>
-            안녕하세요, 저는 <span className = "something">CSS MODULE!</span>
+            안녕하세요, 저는 <span className = "something">김동현 입니다.</span>
         </div>
     );
 };
