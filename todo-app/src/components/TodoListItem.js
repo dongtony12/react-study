@@ -8,7 +8,7 @@ import {
 import cn from 'classnames';
 import './TodoListItem.scss';
 
-const TOdoListItem = ({todo, onRemove, onToggle})=>{
+const TodoListItem = ({todo, onRemove, onToggle})=>{
     const {id,text, checked} = todo;
 
     return(
@@ -25,4 +25,4 @@ const TOdoListItem = ({todo, onRemove, onToggle})=>{
     );
 };
 
-export default TOdoListItem;
+export default React.memo(TodoListItem);
